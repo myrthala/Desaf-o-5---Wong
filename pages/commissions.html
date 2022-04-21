@@ -16,41 +16,54 @@
     <!--Stylesheet-->
     <link rel="stylesheet" href="../css/style.css">
     </head>
-<header>
-        <div class="header__logo">
-            <a href="../index.html"> <img src="../resources/imageLogoMangelArts.jpg" alt="MangelArts"> </a>            
-        </div>
-        <label for="menu" class="header__burgerMenu">
-            <i class="fa-solid fa-bars"></i>
-        </label>
-        <input type="checkbox" id="menu">
-        <nav class="header__menu">
-            <label for="menu" class="header__closeMenu">
-                <i class="fa-solid fa-circle-xmark"></i>
+    <body>
+        <header>
+            <div class="header__logo">
+                <a href="../index.html"> <img src="../resources/imageLogoMangelArts.jpg" alt="MangelArts"> </a>            
+            </div>
+            <label for="menu" class="header__burgerMenu">
+                <i class="fa-solid fa-bars"></i>
             </label>
-            <ul>
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="../pages/about.html">Acerca de</a></li>
-                <li><a href="../pages/gallery.html">Galería</a></li>
-                <li><a href="../pages/commissions.html">Comisiones</a></li>
-                <li><a href="../pages/contact.html">Contacto</a></li>
-            </ul>
-        </nav>
-</header>
+            <input type="checkbox" id="menu">
+            <nav class="header__menu">
+                <label for="menu" class="header__closeMenu">
+                    <i class="fa-solid fa-circle-xmark"></i>
+                </label>
+                <ul>
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="../pages/about.html">Acerca de</a></li>
+                    <li><a href="../pages/gallery.html">Galería</a></li>
+                    <li><a href="../pages/commissions.html">Comisiones</a></li>
+                    <li><a href="../pages/contact.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </header>
+
+
 
 <body>
     <main class="home__mainContainer">
         <section>
+        <div class= "row">
             <h1 class="header__title">¡Tu sueño hecho ilustración!</h1>
-            <h1 class="header__title">Solicita aquí tu cotización</h1>
+         </div>    
+         <div class= "row">
+            <h3 class="header__title">Solicita aquí tu cotización</h3>
+         </div>
         </section>
+        
         <section >
+        <div class= "row">
             <div class="commissions__image"><!--Ilustración representativa.-->
                 <img src="../resources/imageImagen.jpg" alt="Cotización">
             </div>
+            </div>
+            
+            
             <div class="commissions__box">
                 <form action="/ruta'destino" method="get" enctype="">
                     <fieldset>
+                     <div class= "row">
                         <label for="">Tipo de iulstración: </label>
                         <select name="illustrationType">
                             <option value="" hidden selected>Elige de la lista</option>
@@ -59,13 +72,20 @@
                             <option value="drawing">Dibujo</option>
                             <option value="unknown">No sé</option>
                         </select>
+    		</div>
     
-                        <label for="">Descripción/comentarios: </label><br><!--Descripción del proyecto.-->
-                        <textarea name="dreamDescription" id="dream" placeholder="Descríbenos tu sueño. ¡Sin límites!" cols="150" rows="20"></textarea><br>
-                        <div class="clear_and_submit_buttons">
+     		<div class= "row">
+               <label for="">Descripción/comentarios: </label><br><!--Descripción del proyecto.-->
+               </div>
+               <div class= "row">
+               <textarea name="dreamDescription" id="dream" placeholder="Descríbenos tu sueño. ¡Sin límites!" cols="50" rows="10"></textarea>
+                </div>
+                 <div class= "row">
+                <div class="clear_and_submit_buttons">
                             <button type="reset">Limpiar campos</button>
                             <button type="submit">Enviar solicitud</button>
                         </div>
+                         </div>
                     </fieldset>
                 </form>
             </div>
