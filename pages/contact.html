@@ -24,19 +24,9 @@
             <i class="fa-solid fa-bars"></i>
         </label>
         <input type="checkbox" id="menu">
-        <nav class="header__menu">
-            <label for="menu" class="header__closeMenu">
-                <i class="fa-solid fa-circle-xmark"></i>
-            </label>
-            <ul>
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="../pages/about.html">Acerca de</a></li>
-                <li><a href="../pages/gallery.html">Galería</a></li>
-                <li><a href="../pages/commissions.html">Comisiones</a></li>
-                <li><a href="../pages/contact.html">Contacto</a></li>
-            </ul>
-        </nav>
     </header>
+    
+    
     <body>
         <h1 class="header__title">¡Queremos escucharte!</h1>
 
@@ -44,22 +34,27 @@
         <section class="buttons">
             <form action="#" method="get" enctype="">
                 <fieldset>
-                    <label for="">Nombre</label>
-                    <input type="text" name="userName" id="nombre" placeholder="Nombre" required> <br>
+                     <div class= "row">
+                     <label for="">Nombre</label>
+                    <input type="text" name="userName" id="nombre" placeholder="Nombre" required> 
                     <label for="">Apellido</label>
-                    <input type="text" lastname="userLastN" id="apellido" placeholder="Apellido"><br>
+                    <input type="text" lastname="userLastN" id="apellido" placeholder="Apellido">
+                    </div>
+                    
+                    <div class= "row">
                     <label for="">Ciudad</label>
-                    <input type="text" city="city" id="ciudad" placeholder="Ciudad de procedencia"><br>
+                    <input type="text" city="city" id="ciudad" placeholder="Ciudad de procedencia">
                     <label for="">País</label>
-                    <input type="text" country="country" id="country" placeholder="País" required><br>
+                    <input type="text" country="country" id="country" placeholder="País" required>
+                     </div>
+                     
+                      <div class= "row">
                     <label for="">e-Mail</label>
-                    <input type="email" name="email" placeholder="Correo electrónico" required><br>
-    
+                    <input type="email" name="email" placeholder="Correo electrónico" required>
                     <input type="radio" name="gender">
                     <label for="male">Hombre</label>
                     <input type="radio" name="gender">
                     <label for="female">Mujer</label>
-                    
                 <!-- La lista desplegable de edad pudiera cambiarse por input -->
                 <select name="edad">
                     <option value="" hidden selected>Edad</option> 
@@ -112,10 +107,14 @@
                     <option value="">63</option>
                     <option value="">64</option>
                     <option value="">65 o más</option>
-                </select><br>
+                </select>
+                </div>
     
                 <!-- Checkbox -->
+                 <div class= "row">
                 <h4>¿Cómo nos conociste?</h4>
+                </div>
+                 <div class= "row">
                     <label for="facebook">Facebook</label>
                     <input type="checkbox" name="meet" id="face" value="face">
                     <label for="instagram">Instagram</label>
@@ -128,13 +127,19 @@
                     <input type="checkbox" name="meet" id="friends" value="friends">
                     <label for="other">Otro medio</label>
                     <input type="checkbox" name="meet" id="friends" value="friends"><br>
+   				 </div>
     
+    			<div class= "row">
                 <label for="">Asunto</label>
-                <input type="text" name="subject" id="asunto" placeholder="Asunto"> <br>
-                <textarea name="message" placeholder="Deja aquí tus comentarios" cols="30" rows="10"></textarea><br>
-                
+                <input type="text" name="subject" id="asunto" placeholder="Asunto">
+                </div>
+                <div class= "row">
+                <textarea name="message" placeholder="Deja aquí tus comentarios" cols="30" rows="10"></textarea>
+                </div>
+                <div class= "row">
                 <button type="reset">Limpiar campos</button>
                 <button type="submit">Enviar comentarios</button>
+                </div>
     
                 </fieldset>
             </form>

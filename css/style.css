@@ -29,7 +29,7 @@
 
  
 
-  /* +++++++++++++++++> */
+/* +++++++++++++++++> */
 /* HEADER */
 /* +++++++++++ */
 header {
@@ -242,7 +242,7 @@ footer {
   text-align: center;
 }
 
-.home__mainContainer {
+.container-fluid {
   background-color: #6998ab;
   box-shadow: 5px 5px 10px #1a374d;
   width: 95%;
@@ -250,7 +250,7 @@ footer {
   align-items: center;
 }
 
-.home__mainContainer section.home__categoriesContainer {
+.container-fluid section.home__categoriesContainer {
   display: flex;
   flex-direction: column;
   height: 500px;
@@ -262,7 +262,7 @@ footer {
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
 }
 
-.home__mainContainer section.home__categoriesContainer .home__category--image {
+.container-fluid section.home__categoriesContainer .home__category--image {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -271,7 +271,7 @@ footer {
   position: relative;
 }
 
-.home__mainContainer
+.container-fluid
   section.home__categoriesContainer
   .home__category--image
   a {
@@ -281,7 +281,7 @@ footer {
   position: absolute;
   transition: all 0.5s ease-in;
 }
-.home__mainContainer
+.container-fluid
   section.home__categoriesContainer
   .home__category--image
   a:hover {
@@ -292,7 +292,7 @@ footer {
   padding: 0.3rem 0;
 }
 
-.home__mainContainer
+.container-fluid
   section.home__categoriesContainer
   .home__category--image
   .filter {
@@ -305,14 +305,14 @@ footer {
   transition: background-color 0.5s ease-in-out;
 }
 
-.home__mainContainer
+.container-fluid
   section.home__categoriesContainer
   .home__category--image
   .filter:hover {
   background-color: #406882;
 }
 
-.home__mainContainer section.home__table{
+.container-fluid section.home__table{
   border-collapse: collapse;
   width: 50%;
 }
@@ -326,7 +326,7 @@ footer {
   text-align: center;
 }
 
-.home__mainContainer section.home__table th, td {
+.container-fluid section.home__table th, td {
   padding: 15px;
   text-align: left;
 }
@@ -347,12 +347,12 @@ div.MasterpieceDescription {
 /* Media queries */
 
 @media screen and (min-width: 768px) {
-  .home__mainContainer section.home__categoriesContainer {
+  .container-fluid section.home__categoriesContainer {
     flex-direction: row;
     height: 300px;
   }
 
-  .home__mainContainer section.home__table{
+  .container-fluid section.home__table{
     border-collapse: collapse;
     width: 100%;
   }
